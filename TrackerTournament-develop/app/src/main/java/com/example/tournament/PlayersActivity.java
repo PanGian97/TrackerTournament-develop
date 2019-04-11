@@ -68,13 +68,6 @@ public void initPlayers(){
 
 }
 
-//    public void getPlayerName(){
-//        savedPlayers = getSharedPreferences("playerId", Context.MODE_PRIVATE);
-//
-//        String username = savedPlayers.getString("first","Default");
-//
-//        playerView.setText("Last added:"+username);
-//    }
     public void savePlayers() {
         SharedPreferences sharedPreflist = getSharedPreferences("all_names", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreflist.edit();

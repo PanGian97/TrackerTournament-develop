@@ -25,28 +25,11 @@ public class AllPlayersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_players);
 
-
        playerList  =(ArrayList<String>) getIntent().getSerializableExtra("competlist");
        loadPlayers();
     }
-    public void getIncomingIntent(){
-        if(getIntent().hasExtra("del_player_name")){
-            Log.d(TAG, "getIncomingIntent: %Deleted player found!");
-            String delPlayer = getIntent().getStringExtra("del_player_name");
-            deletePlayer(delPlayer);
-        }
-        else{
-            Log.d(TAG, "getIncomingIntent: %Nothing found");}
 
-    }
-    public void deletePlayer(String delPlayer){
-        SharedPreferences sharedPreflist = getSharedPreferences("all_names",MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreflist.edit();
-        Gson gson = new Gson();
-        String json = gson.toJson(playerList);//converts list to json format
-        editor.remove(delPlayer);
-        editor.apply();
-        PlayerAdapter();}
+
 
 
     public void PlayerAdapter(){
@@ -66,7 +49,7 @@ public class AllPlayersActivity extends AppCompatActivity {
         String json = sharefPreflist.getString("player_list",null);
         Type type = new TypeToken<ArrayList<String>>(){}.getType();
         playerList = gson.fromJson(json,type);
-        getIncomingIntent();
+
         PlayerAdapter();
 
 

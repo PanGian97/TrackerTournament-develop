@@ -59,10 +59,9 @@ public class PlayersAdapter extends RecyclerView.Adapter<PlayersAdapter.PlayersV
                 // Remove the item on remove/button click
 
                 Toast.makeText(list_context,"Removed : " + playerPos,Toast.LENGTH_SHORT).show();
-                Intent intent  = new Intent(list_context,PlayersActivity.class);
-                intent.putExtra("player_pos_name",list_playerNames.get(position));
+//
                 list_playerNames.remove(position);
-               // notifyDataSetChanged();
+                notifyDataSetChanged();
 
             }
         });
