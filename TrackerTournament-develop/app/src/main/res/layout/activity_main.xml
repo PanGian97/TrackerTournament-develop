@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tournament Tracker"
+        android:id="@+id/title"
+        android:textSize="21dp"
+        android:textAlignment="center"
+        android:padding="@android:dimen/app_icon_size"
+        />
+
+    <Button
+        android:id="@+id/playerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Players"
+        android:textColor="@color/colorPrimary"/>
+
+
+</LinearLayout>

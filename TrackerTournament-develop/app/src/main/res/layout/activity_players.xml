@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayersActivity"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAYERS"
+android:id="@+id/playerss"
+        android:textSize="21dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAYER username"
+        />
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/playerEdit"
+        android:ems="10"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/subPlayerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+
+
+
+    <Button
+        android:id="@+id/viewPlayersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALL PLAYERS" />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START" />
+
+
+
+</LinearLayout>
